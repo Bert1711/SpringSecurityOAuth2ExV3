@@ -1,0 +1,36 @@
+databaseChangeLog:
+        - changeSet:
+                  id: 1
+                  author: your_author
+                  changes:
+                          - createTable:
+                                    tableName: user_entity
+                                    columns:
+                                            - column:
+                                                      name: id
+                                                      type: BIGINT
+                                                      autoIncrement: true
+                                                      constraints:
+                                                              primaryKey: true
+                                                              nullable: false
+                                            - column:
+                                                      name: name
+                                                      type: VARCHAR(255)
+                                                      constraints:
+                                                              nullable: false
+                                            - column:
+                                                      name: email
+                                                      type: VARCHAR(255)
+                                                      constraints:
+                                                              nullable: false
+                                                              unique: true
+                                            - column:
+                                                      name: role
+                                                      type: VARCHAR(50)
+                                                      constraints:
+                                                              nullable: false
+                                            - column:
+                                                      name: source
+                                                      type: VARCHAR(50)
+                                                      constraints:
+                                                              nullable: false

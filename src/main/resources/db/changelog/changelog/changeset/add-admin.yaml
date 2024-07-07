@@ -1,0 +1,23 @@
+databaseChangeLog:
+  - changeSet:
+      id: 2
+      author: admin
+      changes:
+        - insert:
+            tableName: user_entity
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 1
+              - column:
+                  name: name
+                  value: Albert
+              - column:
+                  name: email
+                  value: zaroyanalbert@gmail.com
+              - column:
+                  name: role
+                  value: ROLE_ADMIN
+              - column:
+                  name: source
+                  value: GOOGLE

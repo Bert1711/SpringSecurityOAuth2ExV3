@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: SpringSecurityOAuth2Ex
+  security:
+    oauth2:
+      client:
+
+
+  liquibase:
+    enabled: false
+
+  datasource:
+    url: jdbc:h2:mem:testdb
+    username: u
+    password: 1
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: none
+    h2:
+      console:
+        enabled: true
+server:
+  port: 8082
